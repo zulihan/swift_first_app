@@ -12,6 +12,7 @@
 		180ABC762021FE9D00F70928 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180ABC742021FE9D00F70928 /* Main.storyboard */; };
 		180ABC782021FE9D00F70928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180ABC772021FE9D00F70928 /* Assets.xcassets */; };
 		180ABC7B2021FE9D00F70928 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180ABC792021FE9D00F70928 /* LaunchScreen.storyboard */; };
+		18159FAF20230A0300416C22 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18159FAE20230A0300416C22 /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		180ABC772021FE9D00F70928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		180ABC7A2021FE9D00F70928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		180ABC7C2021FE9D00F70928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18159FAE20230A0300416C22 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 				180ABC6E2021FE9D00F70928 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		180ABC6E2021FE9D00F70928 /* Products */ = {
 			isa = PBXGroup;
@@ -54,6 +57,7 @@
 		180ABC6F2021FE9D00F70928 /* Restos */ = {
 			isa = PBXGroup;
 			children = (
+				18159FAD202309E200416C22 /* Model */,
 				180ABC702021FE9D00F70928 /* AppDelegate.swift */,
 				180ABC722021FE9D00F70928 /* ViewController.swift */,
 				180ABC742021FE9D00F70928 /* Main.storyboard */,
@@ -62,6 +66,14 @@
 				180ABC7C2021FE9D00F70928 /* Info.plist */,
 			);
 			path = Restos;
+			sourceTree = "<group>";
+		};
+		18159FAD202309E200416C22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18159FAE20230A0300416C22 /* Restaurant.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +150,7 @@
 			files = (
 				180ABC732021FE9D00F70928 /* ViewController.swift in Sources */,
 				180ABC712021FE9D00F70928 /* AppDelegate.swift in Sources */,
+				18159FAF20230A0300416C22 /* Restaurant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
