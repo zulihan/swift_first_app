@@ -30,13 +30,8 @@ class ViewController: UIViewController {
 	@IBOutlet weak var notationResult: UILabel!
 	
 	@IBOutlet var itemsToHide: [UIView]!
-	
-    @IBAction func cancel(_ sender: Any) {
-        dismiss(animated: true, completion:  nil)
-            
-        
-    }
-    var library = Library()
+    
+    private var library = Library.instance
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +67,10 @@ class ViewController: UIViewController {
 		let intValue = Int(value)
 		notationResult.text = "\(intValue)"
 	}
-	
+    
+    @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true, completion:  nil)
+    }
     
     @IBAction func SaveBtn(_ sender: UIButton) {
 
@@ -100,6 +98,8 @@ class ViewController: UIViewController {
 		library.add(newResto)
 		
 		print(newResto)
+        
+        dismiss(animated: true, completion: nil)
     }
 	
 	

@@ -53,6 +53,12 @@ struct Restaurant: Equatable {
 
 class Library {
 	
+	static let instance = Library()
+	
+	private init(){
+		restaurants = []
+	}
+	
 	private var restaurants: [Restaurant] = []
 	// ou var restaurant = [Restaurant]()
 	// ou var restaurants: Array<Restaurant> = []
