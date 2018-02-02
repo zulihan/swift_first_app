@@ -31,7 +31,12 @@ class ViewController: UIViewController {
 	
 	@IBOutlet var itemsToHide: [UIView]!
 	
-	var library = Library()
+    @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true, completion:  nil)
+            
+        
+    }
+    var library = Library()
 	
     override func viewDidLoad() {
         super.viewDidLoad()
